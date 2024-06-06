@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+	
+		function sprawdz()
+		{
+			var haslo = document.getElementById("pole").value;
+			
+			if (haslo.length>=8) document.getElementById("sprawdzone").innerHTML="Jest dobrze";
+			else document.getElementById("sprawdzone").innerHTML="za malo";
+			
+		
+		}
+	
+	</script>
+</head>
+
+<body>
+
+	<input type="text" id="pole" />
+	<input type="submit" value="Sprawdź" onclick="sprawdz()"/>
+	
+	<div id="sprawdzone"></div>
+
+</body>
+
+</html>
